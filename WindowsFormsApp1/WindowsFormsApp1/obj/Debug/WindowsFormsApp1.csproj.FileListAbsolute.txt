@@ -10,3 +10,4 @@ C:\Users\Borshon Alfred Gomes\Desktop\PhoneCover\WindowsFormsApp1\WindowsFormsAp
 C:\Users\Borshon Alfred Gomes\Desktop\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Borshon Alfred Gomes\Desktop\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PhoneDesigner.resources
 C:\Users\Borshon Alfred Gomes\Desktop\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Borshon Alfred Gomes\Desktop\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Registration.resources

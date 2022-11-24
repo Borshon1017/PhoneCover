@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class Registration : Form
     {
-        public Form2()
+        public Registration()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Registration_Load(object sender, EventArgs e)
         {
-           
+
         }
     }
 }
