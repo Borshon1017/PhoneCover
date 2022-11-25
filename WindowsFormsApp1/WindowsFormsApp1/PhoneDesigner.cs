@@ -55,13 +55,29 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0)
+            if (colorComboBox.SelectedIndex == 0)
             {
-                comboBox1.ForeColor=Color.Gray;
+                colorComboBox.ForeColor=Color.Gray;
             }
-            else if (comboBox1.SelectedIndex == 1) { comboBox1.ForeColor = Color.Black; }
-            else if (comboBox1.SelectedIndex == 2) { comboBox1.ForeColor = Color.Blue; }
+            else if (colorComboBox.SelectedIndex == 1) { colorComboBox.ForeColor = Color.Black; }
+            else if (colorComboBox.SelectedIndex == 2) { colorComboBox.ForeColor = Color.Blue; }
 
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 || brandComboBox.SelectedIndex == 0)
+            {
+                colorComboBox.Enabled = true;
+            }
+            
+        }
+
+        private void brandComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 ||brandComboBox.SelectedIndex == 0) {
+                modelComboBox.Enabled = true;
+            }
         }
     }
 }

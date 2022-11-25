@@ -34,7 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.colorComboBox = new System.Windows.Forms.ComboBox();
+            this.brandComboBox = new System.Windows.Forms.ComboBox();
+            this.modelComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -91,21 +93,51 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // comboBox1
+            // colorComboBox
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.colorComboBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.colorComboBox.Enabled = false;
+            this.colorComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorComboBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.colorComboBox.FormattingEnabled = true;
+            this.colorComboBox.Items.AddRange(new object[] {
             "White",
             "Black",
             "Blue"});
-            this.comboBox1.Location = new System.Drawing.Point(126, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(98, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Choose Color";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.colorComboBox.Location = new System.Drawing.Point(121, 380);
+            this.colorComboBox.Name = "colorComboBox";
+            this.colorComboBox.Size = new System.Drawing.Size(140, 29);
+            this.colorComboBox.TabIndex = 5;
+            this.colorComboBox.Text = "  Choose Color";
+            this.colorComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // brandComboBox
+            // 
+            this.brandComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brandComboBox.FormattingEnabled = true;
+            this.brandComboBox.Items.AddRange(new object[] {
+            "Iphone",
+            "Samsung",
+            "Xiaomi"});
+            this.brandComboBox.Location = new System.Drawing.Point(126, 140);
+            this.brandComboBox.Name = "brandComboBox";
+            this.brandComboBox.Size = new System.Drawing.Size(140, 29);
+            this.brandComboBox.TabIndex = 6;
+            this.brandComboBox.Text = "  Choose Brand";
+            this.brandComboBox.SelectedIndexChanged += new System.EventHandler(this.brandComboBox_SelectedIndexChanged);
+            // 
+            // modelComboBox
+            // 
+            this.modelComboBox.AllowDrop = true;
+            this.modelComboBox.Enabled = false;
+            this.modelComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modelComboBox.FormattingEnabled = true;
+            this.modelComboBox.Location = new System.Drawing.Point(121, 261);
+            this.modelComboBox.Name = "modelComboBox";
+            this.modelComboBox.Size = new System.Drawing.Size(140, 29);
+            this.modelComboBox.TabIndex = 7;
+            this.modelComboBox.Text = "  Choose Model";
+            this.modelComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // PhoneDesigner
             // 
@@ -113,7 +145,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1034, 527);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.modelComboBox);
+            this.Controls.Add(this.brandComboBox);
+            this.Controls.Add(this.colorComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -136,7 +170,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox colorComboBox;
+        private System.Windows.Forms.ComboBox brandComboBox;
+        private System.Windows.Forms.ComboBox modelComboBox;
     }
 }
 
