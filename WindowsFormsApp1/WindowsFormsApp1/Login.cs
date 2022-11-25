@@ -11,10 +11,10 @@ using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
 
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
@@ -36,13 +36,13 @@ namespace WindowsFormsApp1
             string login = "SELECT * FROM UserInfo WHERE FULLNAME = '" + textBox1.Text + "' AND PASSWORD = '" + textBox2.Text + "' ";
             cmd = new OleDbCommand(login, con);
             OleDbDataReader dr = cmd.ExecuteReader();
-            con.Close();
+            
 
             if (dr.Read() == true)
             {
-
-                this.Close();
-                
+                 
+                new UserMainMenu().Show();
+               
 
             }
             else {
@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
                 label4.Visible = true;
 
             }
+
 
         }
 

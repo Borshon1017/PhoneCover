@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class UserMainmenu : Form
+    public partial class UserMainMenu : Form
     {
-        public UserMainmenu()
+        public UserMainMenu()
         {
             InitializeComponent();
         }
@@ -25,6 +25,28 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            new Login();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new PhoneDesigner().Show(); 
         }
     }
 }

@@ -52,5 +52,16 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                comboBox1.ForeColor=Color.Gray;
+            }
+            else if (comboBox1.SelectedIndex == 1) { comboBox1.ForeColor = Color.Black; }
+            else if (comboBox1.SelectedIndex == 2) { comboBox1.ForeColor = Color.Blue; }
+
+        }
     }
 }

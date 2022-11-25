@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
                 cmd.ExecuteNonQuery();
                 con.Close();
                 this.Hide();
-                new Form2().Show();
+                new Login();
             }
             
         }

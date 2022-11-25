@@ -26,5 +26,27 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            new Login();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new PhoneDesigner().Show(); 
+        }
     }
 }

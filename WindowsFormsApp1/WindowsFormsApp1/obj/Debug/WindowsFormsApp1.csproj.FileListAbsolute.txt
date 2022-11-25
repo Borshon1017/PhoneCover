@@ -30,7 +30,6 @@ C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsAp
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Registration.resources
-C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PhoneDesigner.resources
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SellerMainmenu.resources
@@ -39,3 +38,4 @@ C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsAp
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
