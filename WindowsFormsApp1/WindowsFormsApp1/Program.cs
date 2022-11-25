@@ -21,5 +21,3 @@ namespace WindowsFormsApp1
     }
 }
 
-//hi from bolod
-// hello
