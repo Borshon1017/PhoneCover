@@ -132,6 +132,10 @@
             this.modelComboBox.Enabled = false;
             this.modelComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modelComboBox.FormattingEnabled = true;
+            this.modelComboBox.Items.AddRange(new object[] {
+            "Samsung",
+            "Iphone",
+            "Xiaomi"});
             this.modelComboBox.Location = new System.Drawing.Point(121, 261);
             this.modelComboBox.Name = "modelComboBox";
             this.modelComboBox.Size = new System.Drawing.Size(140, 29);
