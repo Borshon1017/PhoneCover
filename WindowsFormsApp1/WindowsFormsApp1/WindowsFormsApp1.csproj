@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SellerMainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerMainmenu.Designer.cs">
+      <DependentUpon>SellerMainmenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMainmenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SellerMainmenu.resx">
+      <DependentUpon>SellerMainmenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserMainmenu.resx">
       <DependentUpon>UserMainmenu.cs</DependentUpon>
     </EmbeddedResource>
