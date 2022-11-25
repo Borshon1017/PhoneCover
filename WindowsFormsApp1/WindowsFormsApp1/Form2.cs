@@ -12,6 +12,9 @@ namespace WindowsFormsApp1
 {
     public partial class Form2 : Form
     {
+
+        
+
         public Form2()
         {
             InitializeComponent();
@@ -22,6 +25,16 @@ namespace WindowsFormsApp1
            this.Hide();
             Registration registration = new Registration();
             registration.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
