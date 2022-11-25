@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SellerMainmenu.cs">
+    <Compile Include="SellerMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SellerMainmenu.Designer.cs">
-      <DependentUpon>SellerMainmenu.cs</DependentUpon>
+    <Compile Include="SellerMainMenu.Designer.cs">
+      <DependentUpon>SellerMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserMainmenu.cs">
+    <Compile Include="UserMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserMainmenu.Designer.cs">
-      <DependentUpon>UserMainmenu.cs</DependentUpon>
+    <Compile Include="UserMainMenu.Designer.cs">
+      <DependentUpon>UserMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Registration.cs">
       <SubType>Form</SubType>
@@ -97,11 +97,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SellerMainmenu.resx">
-      <DependentUpon>SellerMainmenu.cs</DependentUpon>
+    <EmbeddedResource Include="SellerMainMenu.resx">
+      <DependentUpon>SellerMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserMainmenu.resx">
-      <DependentUpon>UserMainmenu.cs</DependentUpon>
+    <EmbeddedResource Include="UserMainMenu.resx">
+      <DependentUpon>UserMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
