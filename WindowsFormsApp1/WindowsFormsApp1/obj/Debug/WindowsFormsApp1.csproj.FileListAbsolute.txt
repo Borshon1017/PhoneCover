@@ -39,3 +39,5 @@ C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsAp
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Borshon Alfred Gomes\Source\Repos\Borshon1017\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\User\source\repos\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.SellerMainmenu.resources
+C:\Users\User\source\repos\PhoneCover\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserMainmenu.resources

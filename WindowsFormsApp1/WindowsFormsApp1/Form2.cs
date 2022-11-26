@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             string login = "SELECT * FROM UserInfo WHERE FULLNAME = '" + textBox1.Text + "' AND PASSWORD = '" + textBox2.Text + "' ";
             cmd = new OleDbCommand(login, con);
             OleDbDataReader dr = cmd.ExecuteReader();
-            con.Close();
+            
 
             if (dr.Read() == true)
             {
@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
                 label4.Visible = true;
 
             }
+            con.Close();
 
         }
 
