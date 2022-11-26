@@ -40,9 +40,6 @@ namespace WindowsFormsApp1
             open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                // display image in picture box  
-                pictureBox2.Visible = true;
-                pictureBox2.Image = new Bitmap(open.FileName);
                 // image file path  
                 label1.Text = open.FileName;
             }
@@ -78,6 +75,12 @@ namespace WindowsFormsApp1
             if(brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 ||brandComboBox.SelectedIndex == 0) {
                 modelComboBox.Enabled = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new UserMainMenu().Show();
         }
     }
 }

@@ -41,11 +41,13 @@ namespace WindowsFormsApp1
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            new Login();
+            this.Hide();
+            new Login().Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new PhoneDesigner().Show(); 
         }
     }
