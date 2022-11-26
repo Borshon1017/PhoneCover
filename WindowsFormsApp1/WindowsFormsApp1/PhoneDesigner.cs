@@ -58,12 +58,12 @@ namespace WindowsFormsApp1
             }
             else if (colorComboBox.SelectedIndex == 1) { colorComboBox.ForeColor = Color.Black; }
             else if (colorComboBox.SelectedIndex == 2) { colorComboBox.ForeColor = Color.Blue; }
-
+            button2.Enabled= true;
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 || brandComboBox.SelectedIndex == 0)
+            if (modelComboBox.SelectedIndex == 0 || modelComboBox.SelectedIndex == 1 || modelComboBox.SelectedIndex == 2)
             {
                 colorComboBox.Enabled = true;
             }
@@ -72,7 +72,7 @@ namespace WindowsFormsApp1
 
         private void brandComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 ||brandComboBox.SelectedIndex == 0) {
+            if(brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 ||brandComboBox.SelectedIndex == 2 || brandComboBox.SelectedIndex == 3 || brandComboBox.SelectedIndex == 4) {
                 modelComboBox.Enabled = true;
             }
         }
