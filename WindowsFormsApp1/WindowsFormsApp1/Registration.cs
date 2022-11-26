@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         }
 
-        OleDbConnection con = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = UserInfo.mdb");
+        OleDbConnection con = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:/Users/User/source/repos/PhoneCover/WindowsFormsApp1/Databases/UserInfo.mdb");
         OleDbCommand cmd = new OleDbCommand();
         OleDbDataAdapter da = new OleDbDataAdapter();
 
