@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class SellerMainmenu
+    partial class SellerMainMenu
     {
         /// <summary>
         /// Required designer variable.

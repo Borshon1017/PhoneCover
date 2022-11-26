@@ -11,10 +11,10 @@ using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
 
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
@@ -40,9 +40,9 @@ namespace WindowsFormsApp1
 
             if (dr.Read() == true)
             {
-
-                this.Close();
-                
+                 
+                new UserMainMenu().Show();
+               
 
             }
             else {
@@ -52,9 +52,15 @@ namespace WindowsFormsApp1
             }
             con.Close();
 
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

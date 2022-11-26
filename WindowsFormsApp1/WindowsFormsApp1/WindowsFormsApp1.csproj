@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SellerMainmenu.cs">
+    <Compile Include="SellerMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SellerMainmenu.Designer.cs">
-      <DependentUpon>SellerMainmenu.cs</DependentUpon>
+    <Compile Include="SellerMainMenu.Designer.cs">
+      <DependentUpon>SellerMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserMainmenu.cs">
+    <Compile Include="UserMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserMainmenu.Designer.cs">
-      <DependentUpon>UserMainmenu.cs</DependentUpon>
+    <Compile Include="UserMainMenu.Designer.cs">
+      <DependentUpon>UserMainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Registration.cs">
       <SubType>Form</SubType>
@@ -64,11 +64,11 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="PhoneDesigner.cs">
       <SubType>Form</SubType>
@@ -81,8 +81,8 @@
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhoneDesigner.resx">
       <DependentUpon>PhoneDesigner.cs</DependentUpon>
@@ -97,11 +97,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SellerMainmenu.resx">
-      <DependentUpon>SellerMainmenu.cs</DependentUpon>
+    <EmbeddedResource Include="SellerMainMenu.resx">
+      <DependentUpon>SellerMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserMainmenu.resx">
-      <DependentUpon>UserMainmenu.cs</DependentUpon>
+    <EmbeddedResource Include="UserMainMenu.resx">
+      <DependentUpon>UserMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Register.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
