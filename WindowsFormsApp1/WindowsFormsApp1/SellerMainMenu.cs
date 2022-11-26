@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class UserLogin : Form
+    public partial class SellerMainMenu : Form
     {
-        public UserLogin()
+        public SellerMainMenu()
         {
             InitializeComponent();
+        }
+
+        private void SellerMainmenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
