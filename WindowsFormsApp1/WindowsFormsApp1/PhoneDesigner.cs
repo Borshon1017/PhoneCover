@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
@@ -19,25 +18,8 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        int brandId;
-
-        OleDbConnection con = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = Databases/PhoneModel.mdb");
-        OleDbCommand cmd = new OleDbCommand();
-        OleDbDataAdapter da = new OleDbDataAdapter();
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            con.Open();
-            string showBrand = "SELECT * FROM BRAND";
-            cmd = new OleDbCommand(showBrand, con);
-            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            brandComboBox.DisplayMember = "BRAND_NAME";
-            brandComboBox.ValueMember = "BRAND_ID";
-            brandComboBox.DataSource = dt;
 
         }
 
@@ -76,12 +58,12 @@ namespace WindowsFormsApp1
             }
             else if (colorComboBox.SelectedIndex == 1) { colorComboBox.ForeColor = Color.Black; }
             else if (colorComboBox.SelectedIndex == 2) { colorComboBox.ForeColor = Color.Blue; }
-
+            button2.Enabled= true;
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 || brandComboBox.SelectedIndex == 0)
+            if (modelComboBox.SelectedIndex == 0 || modelComboBox.SelectedIndex == 1 || modelComboBox.SelectedIndex == 2)
             {
                 colorComboBox.Enabled = true;
             }
@@ -90,22 +72,8 @@ namespace WindowsFormsApp1
 
         private void brandComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(brandComboBox.SelectedValue.ToString() != null ) {
-
-                brandId = Convert.ToInt32(brandComboBox.SelectedValue.ToString());
-
-                con.Open();
-                string showModel = "SELECT * FROM MODEL WHERE BRAND_ID = " + brandId;
-                cmd.Parameters.AddWithValue("BRAND_ID", brandId);
-                cmd = new OleDbCommand(showModel, con);
-                OleDbDataAdapter da = new OleDbDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                con.Close();
-                modelComboBox.DisplayMember = "MODEL_NAME";
-                modelComboBox.ValueMember = "MODEL_ID";
-                modelComboBox.DataSource = dt;
-
+            if(brandComboBox.SelectedIndex == 0 || brandComboBox.SelectedIndex == 1 ||brandComboBox.SelectedIndex == 2 || brandComboBox.SelectedIndex == 3 || brandComboBox.SelectedIndex == 4) {
+                modelComboBox.Enabled = true;
             }
         }
 
