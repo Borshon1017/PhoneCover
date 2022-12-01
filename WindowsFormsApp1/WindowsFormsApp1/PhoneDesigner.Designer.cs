@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhoneDesigner));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,43 +41,44 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(121, 36);
+            this.button1.Location = new System.Drawing.Point(161, 44);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 24);
+            this.button1.Size = new System.Drawing.Size(332, 30);
             this.button1.TabIndex = 2;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(118, 76);
+            this.label1.Location = new System.Drawing.Point(157, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Path: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 89);
+            this.label2.Location = new System.Drawing.Point(164, 110);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 16);
             this.label2.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(691, 27);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(928, 44);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(264, 239);
+            this.pictureBox1.Size = new System.Drawing.Size(347, 304);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // colorComboBox
             // 
@@ -87,58 +87,45 @@
             this.colorComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorComboBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.colorComboBox.FormattingEnabled = true;
-            this.colorComboBox.Items.AddRange(new object[] {
-            "White",
-            "Black",
-            "Blue"});
-            this.colorComboBox.Location = new System.Drawing.Point(121, 313);
+            this.colorComboBox.Location = new System.Drawing.Point(161, 385);
+            this.colorComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.colorComboBox.Name = "colorComboBox";
-            this.colorComboBox.Size = new System.Drawing.Size(140, 29);
+            this.colorComboBox.Size = new System.Drawing.Size(185, 34);
             this.colorComboBox.TabIndex = 5;
             this.colorComboBox.Text = " Color";
-            this.colorComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // brandComboBox
             // 
+            this.brandComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.brandComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.brandComboBox.FormattingEnabled = true;
-            this.brandComboBox.Items.AddRange(new object[] {
-            "Iphone",
-            "Samsung",
-            "Xiaomi",
-            "Oppo",
-            "Huawei"});
-            this.brandComboBox.Location = new System.Drawing.Point(121, 197);
+            this.brandComboBox.Location = new System.Drawing.Point(161, 242);
+            this.brandComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.brandComboBox.Name = "brandComboBox";
-            this.brandComboBox.Size = new System.Drawing.Size(140, 29);
+            this.brandComboBox.Size = new System.Drawing.Size(331, 34);
             this.brandComboBox.TabIndex = 6;
-            this.brandComboBox.Text = " Brand";
             this.brandComboBox.SelectedIndexChanged += new System.EventHandler(this.brandComboBox_SelectedIndexChanged);
             // 
             // modelComboBox
             // 
             this.modelComboBox.AllowDrop = true;
-            this.modelComboBox.Enabled = false;
+            this.modelComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.modelComboBox.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modelComboBox.FormattingEnabled = true;
-            this.modelComboBox.Items.AddRange(new object[] {
-            "Samsung",
-            "Iphone",
-            "Xiaomi"});
-            this.modelComboBox.Location = new System.Drawing.Point(121, 254);
+            this.modelComboBox.Location = new System.Drawing.Point(161, 313);
+            this.modelComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.modelComboBox.Name = "modelComboBox";
-            this.modelComboBox.Size = new System.Drawing.Size(140, 29);
+            this.modelComboBox.Size = new System.Drawing.Size(331, 34);
             this.modelComboBox.TabIndex = 7;
-            this.modelComboBox.Text = " Model";
-            this.modelComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // button2
             // 
             this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(426, 354);
+            this.button2.Location = new System.Drawing.Point(568, 436);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 64);
+            this.button2.Size = new System.Drawing.Size(228, 79);
             this.button2.TabIndex = 8;
             this.button2.Text = "Confirm Order";
             this.button2.UseVisualStyleBackColor = true;
@@ -146,10 +133,10 @@
             // 
             // PhoneDesigner
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1034, 527);
+            this.ClientSize = new System.Drawing.Size(1379, 649);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.modelComboBox);
             this.Controls.Add(this.brandComboBox);
@@ -158,6 +145,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PhoneDesigner";
             this.Text = "Design";
             this.Load += new System.EventHandler(this.Form1_Load);
